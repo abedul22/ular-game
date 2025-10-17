@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Game Ular (Mobile Friendly)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <h1>Game Ular</h1>
+        <div class="score-board">
+            <div>Skor: <span id="score">0</span></div>
+            <div>Terbaik: <span id="highScore">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Kontrol Sentuh untuk Mobile -->
+        <div id="mobile-controls">
+            <button id="upBtn">▲</button>
+            <div class="middle-controls">
+                <button id="leftBtn">◄</button>
+                <button id="rightBtn">►</button>
+            </div>
+            <button id="downBtn">▼</button>
+        </div>
+        
+        <div id="gameOverScreen" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Skor Akhir: <span id="finalScore">0</span></p>
+            <button id="restartButton">Coba Lagi</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
